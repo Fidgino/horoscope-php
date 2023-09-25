@@ -4,7 +4,7 @@
     $url = "https://kayoo123.github.io/astroo-api/hebdomadaire.json";
     $data = file_get_contents($url);
     $result = json_decode($data, true);
-
+    var_dump($result);
     if(isset($_POST['horoscopeSubmit'])) {
         $name = $_POST['clientPrenom'];
         
